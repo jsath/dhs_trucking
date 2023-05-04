@@ -92,7 +92,7 @@ return (
         justify="center"
         justifyContent='space-between'
         w="100%"
-        h="12vh"
+        h="15vh"
         px={5}
         py={2}
         bg="transparent"
@@ -101,15 +101,17 @@ return (
         position='sticky'
         zIndex={10}
     >
-    
+        <Box/>
         <Flex align="center" ml='15px'>
             <img src={truck} width='50' alt='dhs_logo'/>
         </Flex>
+        <Box/>
 
 
         <Text fontSize="3xl" fontWeight="bold" color="gray.700" _hover={{transform: "scale(1.10)"}}>
             DHS Trucking
         </Text>
+        <Box/>
 
 
 
@@ -140,7 +142,16 @@ return (
         </DrawerContent>
       </Drawer>
 
+      <Box/>
+
     </Flex>
+
+    <Box position='fixed' bottom='15' right='15' zIndex='15' background='white' borderRadius='xl' p='5' _hover={{border: "2px solid black", transform: "scale(1.05)"}}>
+        <Flex width='100%' gap={5} alignItems='center' justifyContent='center'>
+                <img src={mbe} alt='mbe' width='75'/>
+                <img src={edge} alt='edge' width='75'/>
+        </Flex>   
+    </Box>
 
 
 
@@ -160,13 +171,12 @@ return (
             <Text>
               Cell:  <Text as='samp' >(740) - 856 - 8654</Text>
             </Text>
+            <Text>
+                Facebook: <Text as='samp' ><a href='https://www.facebook.com/dhstrucking' target="_blank" rel="noopener noreferrer">DHS Trucking</a></Text>
+            </Text>
           </ModalBody>
           <ModalFooter>
 
-            <Flex width='100%' gap={5} alignItems='center'>
-                <img src={mbe} alt='mbe' width='50'/>
-                <img src={edge} alt='edge' width='50'/>
-            </Flex>
 
             <Button colorScheme="blue" mr={3} onClick={onCloseContactModal}>
               Close
