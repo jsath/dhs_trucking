@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   Flex,
   Text,
@@ -12,7 +12,7 @@ import {
   useDisclosure,
   Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody
 } from '@chakra-ui/react';
-import { Box, Spacer, IconButton, VStack, HStack } from '@chakra-ui/react';
+import { Box, IconButton, HStack } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import truck from '../Imgs/truck.jpeg'
 import mbe from '../Imgs/mbe.png'
@@ -47,11 +47,11 @@ const Navbar = (props) => {
 
 
 
-    const [isMobileView, setIsMobileView] = useState(false);
+    // const [isMobileView, setIsMobileView] = useState(false);
   
-    const toggleView = () => {
-      setIsMobileView(!isMobileView);
-    };
+    // const toggleView = () => {
+    //   setIsMobileView(!isMobileView);
+    // };
 
 
     const NavLinks = () => ( 
@@ -98,6 +98,8 @@ return (
         bg="transparent"
         borderBottom="1.5px solid black"
         background='transparent'
+        position='sticky'
+        zIndex={10}
     >
     
         <Flex align="center" ml='15px'>

@@ -19,7 +19,7 @@ function ImageCarousel({ images }) {
         <Box
           key={index}
           w="100vw"
-          h="90%"
+          h="100%"
           backgroundImage={`url(${image})`}
           backgroundSize="cover"
           backgroundPosition={image.height > image.width ? 'top' : 'center'}
