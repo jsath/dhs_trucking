@@ -18,7 +18,7 @@ function ImageCarousel({ images }) {
       {images.map((image, index) => (
         <Box
           key={index}
-          w="100%"
+          w="100vw"
           h="90%"
           backgroundImage={`url(${image})`}
           backgroundSize="cover"
